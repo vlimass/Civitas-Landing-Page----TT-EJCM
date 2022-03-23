@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+
+    /* Variáveis: */
+    --white: #FBFCEE;
+    --red: #A52422;
+    --light-blue: #A4BAB7;
+    --dark-blue: #080F0F;
+    --brown: #BEA57D;
+    --black: #333333;
+    --gray: rgba(0, 0, 0, 0.63);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--light-blue);
+    font-family: 'Poppins', sans-serif;
+}
+
+.horizontal-line {
+    height: 3px;
+    background-color: #e7e7e7da;
+    width: 100%;
+    border: none;
+}
+
+
+/* HEADER */
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
+
+header nav ul li {
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem;
+}
+
+header nav ul li a{
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+
+}
+
+header nav ul li .nav-link:hover {
+   opacity: 0.6;
+   transition: 0.1s;
+}
+
+header nav ul li .download-link{
+    background-color: #A52422;
+    padding: 0.8rem 1.75rem;
+    border-radius: 30px;
+}
+
+header nav ul li .download-link:hover {
+    background-color: #a52422dc;
+    color: #fbfceedc;
+    transition: 0.2s;
+}
+
+
+/* MAIN - HOME */
+
+#home article{
+    width: 90vw;
+    margin-top: 2rem;
+    margin-bottom: 7.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#home article .home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-left: 6rem;
+}
+
+#home article .home-text .logo-civitas{
+    height: 15rem;
+}
+
+#home article .home-text .home-p{
+    margin-bottom: 1.5rem;
+}
+
+#home article .home-text h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gray);
+    text-align: center;
+}
+
+#home article .home-text .download-buttons{
+    display: flex;
+    align-items: center;
+}
+
+#home article .home-img .home-civitas{
+    height: 40rem;
+}
+
+.download-app-store {
+    height: 4rem;
+    margin-left: 1rem;
+}
+
+.download-google-play {
+    height: 6.2rem;
+}
+
+
+/* MAIN - ABOUT */
+
+#about {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68vh;
+}
+
+#about .about-text{
+    width: 32rem;
+    margin-right: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#about .about-text h2{
+    font-size: 3rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+
+#about .about-text p{
+    font-size: 1.25rem;
+    color:rgba(0, 0, 0, 0.63);
+    margin-bottom: 3.5rem;
+}
+
+#about .about-text .ver-mais a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--red);
+    border: 2px solid var(--red);
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+}
+
+#about .about-text .ver-mais a:hover{
+    background-color: #a52422ef;
+    color: var(--white);
+
+    transition: 0.3s all;
+}
+
+#about .about-img {
+    height: 68vh;
+}
+
+#about .about-img img{
+    width: 50vw;
+}
+
+
+/* MAIN - FEATURES */
+
+#features {
+    background-color: var(--brown);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 68vh;
+}
+
+#features .features-text{
+    width: 37rem;
+    text-align: center;
+}
+
+#features .features-text h2{
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+
+#features .features-text p{
+    font-size: 1.25rem;
+    color:rgba(0, 0, 0, 0.63);
+    margin-bottom: 3.5rem;
+}
+#features .features-text .ver-mais a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark-blue);
+    border: 2px solid var(--dark-blue);
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+}
+
+#features .features-text .ver-mais a:hover{
+    background-color: #080f0fec;
+    color: var(--white);
+
+    transition: 0.3s all;
+}
+
+#features .features-img{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+
+    margin-right: 10rem;
+}
+
+#features .features-img img{
+    width: 22.5rem;
+}
+
+
+/* MAIN - SIGNUP */
+
+#signup {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+
+#signup .signup-img {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+#signup .signup-img img {
+    width: 18rem;
+}
+
+#signup .signup-text {
+    background-color: white;
+    padding: 2.5rem;
+    box-shadow: #080f0f67 2.5px 2.5px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+#signup .signup-text h2{
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+
+#signup .signup-text form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#signup .signup-text form label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    color: var(--gray);
+}
+
+#signup .signup-text form .input-block input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    border: 0.2px solid #33333338;
+    border-radius: 5px;
+
+    width: 25rem;
+    padding: 0.75rem 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#signup .signup-text form .input-signup input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 15px;
+    border: none;
+
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+}
+
+#signup .signup-text form .input-signup input:hover{
+    opacity: 0.9;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+footer .social {
+    margin-top: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+footer .social img{
+    color: var(--black);
+    height: 2.5rem;
+    opacity: 0.75;
+}
+
+footer .social img:hover{
+    opacity: 0.5;
+    transition: 0.1s;
+}
+
+footer p {
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+footer .footer-img img{
+    height: 5rem;
+}
