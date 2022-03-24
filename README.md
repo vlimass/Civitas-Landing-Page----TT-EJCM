@@ -17,3 +17,7 @@ Com o objetivo de poupar o tempo do usuário e impulsionar a economia da região
 ## Imagens do projeto
 
 ![Tela inicial da landing page](assets/imagem-civitas-landing-page.png)
+
+![Tela inicial da landing page](assets/imagem-civitas-landing-page-2.png)
+
+![Tela inicial da landing page](assets/imagem-civitas-landing-page-3.png)
