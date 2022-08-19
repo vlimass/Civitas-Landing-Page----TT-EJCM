@@ -176,7 +176,7 @@ header nav ul li .download-link:hover {
 }
 
 #about .about-img {
-    height: 68vh;
+    height: 100%;
 }
 
 #about .about-img img{
